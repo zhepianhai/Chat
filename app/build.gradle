@@ -1,0 +1,128 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    signingConfigs {
+        zhepianhai {
+            keyAlias 'zph'
+            keyPassword '123456'
+            storeFile file('C:/Users/adminZPH/Desktop/zph.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+
+    aaptOptions
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    defaultConfig {
+        applicationId "zph.zhjx.com.chat"
+        minSdkVersion 17
+        multiDexEnabled true
+
+        targetSdkVersion 24
+        versionCode 2
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "99ae0176bb072bfa9e6be9da", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64", 'armeabi-v8a', 'x86'
+        }
+
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+
+    }
+}
+greendao {
+    schemaVersion 1//数据库版本号
+    daoPackage 'zph.zhjx.com.chat.db'//设置DaoMaster、DaoSession、Dao包名
+    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    //targetGenDirTest：设置生成单元测试目录
+    //generateTests：设置自动生成单元测试用例
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories"
+        }
+        jcenter()
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar', '*.so', '*.a'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+
+    //添加retrofit gson转换会自动下载gson
+
+    //添加返回的字符串支付
+
+    //    compile 'com.jakewharton:butterknife:8.5.1'
+
+    // 此处以JPush 3.0.0 版本为例。
+
+    // 此处以JCore 1.0.0 版本为例。
+
+    //    compile(name: 'renderer', ext: 'aar')
+    compile project(':worldwind')
+    compile files('libs/Amap_2DMap_V2.9.2_20161026.jar')
+    compile files('libs/AMap_Location_V3.2.0_20161205.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/MapApi.jar')
+    compile files('libs/AMap_Search_V3.5.0_20160927.jar')
+    compile files('libs/geosot-2.0.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+    compile files('libs/Android_Map3D_SDK_V5.0.0_20170311.jar')
+    compile files('libs/commons-codec-1.9.jar')
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'io.reactivex:rxjava:1.2.7'
+    compile 'cn.jiguang.sdk:jpush:3.0.0'
+    compile 'cn.jiguang.sdk:jcore:1.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.3.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-vector-drawable:24.2.1'
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+    compile 'org.xutils:xutils:3.5.0'
+    testCompile 'junit:junit:4.12'
+}
+
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clipToPadding="true"
+    android:background="@color/colordanbg"
+    android:fitsSystemWindows="true"
+
+    tools:context="zph.zhjx.com.chat.ui.DetailTrackActivity">
+    <include layout="@layout/headview3"
+        android:id="@+id/headview1"/>
+    <LinearLayout
+        android:layout_below="@+id/headview1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+            <com.amap.api.maps.MapView
+                android:id="@+id/detail_tracked_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true">
+            </com.amap.api.maps.MapView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/detail_tracked_day_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/detail_tracked_time_star_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="起始时间"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorbasse"
+                android:background="@drawable/login_bg_select"
+                android:layout_height="48dp" />
+
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/detail_tracked_time_end_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="结束时间"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorbasse"
+                android:background="@drawable/login_bg_select"
+                android:layout_height="48dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/detail_tracked_time_star_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/detail_tracked_time_end_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <Button
+            android:id="@+id/detail_tracked_search_btn"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:text="搜索"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/colorbasse"
+            android:background="@drawable/login_bg_select"
+            android:layout_height="48dp" />
+        </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

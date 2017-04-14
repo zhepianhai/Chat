@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zph.zhjx.com.chat.fragment.SearchLiuYanFragment">
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/search_liuyan_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+    </com.amap.api.maps2d.MapView>
+    <ScrollView
+        android:id="@+id/search_liuyan_srcollview"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="100dp"
+        android:background="@color/colorhome"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/search_liuyan_name"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorbasse"
+                    android:gravity="center|left"
+                    android:textSize="16sp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/search_liuyan_time"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorbasse"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:textColor="@color/colorbasse"
+                android:id="@+id/search_liuyan_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

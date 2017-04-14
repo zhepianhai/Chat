@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@color/colordanbg"
+    android:fitsSystemWindows="true"
+    tools:context="zph.zhjx.com.chat.ui.SettingActivity">
+    <include
+        android:id="@+id/headview1"
+        layout="@layout/headview1"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/headview1"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorbasse"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_toLeftOf="@+id/guiji_switch_button"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:gravity="center|left"
+                android:textColor="@color/color_bg_banhei"
+                android:text="@string/pref_title_social_recommendations"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:text="@string/pref_description_social_recommendations"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+        <com.suke.widget.SwitchButton
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            app:sb_checked_color="@color/colorhome"
+            android:id="@+id/guiji_switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/me_logout1"
+        android:id="@+id/me_cheack"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/relalayout_select">
+        <ImageView
+            android:id="@+id/user6_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/update" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:id="@+id/jiantou7"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/yuan_hong" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/jiantou7"
+            android:layout_toRightOf="@+id/user6_image"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:text="版本更新"
+            android:textColor="@color/color_listviewitem"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/me_logout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/relalayout_select">
+
+        <ImageView
+            android:id="@+id/user5_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/logout" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:id="@+id/jiantou6"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/yuan_hong" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/jiantou6"
+            android:layout_toRightOf="@+id/user5_image"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:text="退出登录"
+            android:textColor="@color/color_listviewitem"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="zph.zhjx.com.chat.ui.MenuActivity">
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:background="@color/colorhome"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="网格聊天"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorbasse"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/jiahao"
+            android:layout_alignParentRight="true"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topview"
+        android:layout_above="@+id/bottom_navigation_bar"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

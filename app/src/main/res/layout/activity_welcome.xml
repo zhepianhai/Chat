@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zph.zhjx.com.chat.ui.WelcomeActivity">
+   <TextView
+       android:layout_width="match_parent"
+       android:text="登录成功"
+       android:textSize="30sp"
+       android:layout_centerInParent="true"
+       android:gravity="center"
+       android:textColor="#000"
+       android:layout_height="wrap_content"
+    />
+
+   <Button
+       android:id="@+id/logout"
+       android:layout_width="match_parent"
+       android:layout_marginRight="50dp"
+       android:layout_marginLeft="50dp"
+       android:text="退出登录"
+       android:textSize="20sp"
+       android:textColor="@color/colorbasse"
+       android:layout_marginBottom="20dp"
+       android:background="@drawable/login_bg_select"
+       android:layout_alignParentBottom="true"
+       android:layout_height="48dp" />
+</RelativeLayout>

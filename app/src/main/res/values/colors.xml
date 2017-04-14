@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 蓝色-->
+    <color name="colorlanse">#0099cc</color>
+    <!-- 白色-->
+    <color name="colorbasse">#FFF</color>
+    <!-- 橘红色-->
+    <color name="colorjuhong">#FA6422</color>
+    <!-- 西红柿色 -->
+    <color name="colororangered">#FF4500</color>
+    <!-- 淡灰色颜色,在白底下面使用，如搜索框的颜色-->
+    <color name="colorqianhuise">#F3F3F3</color>
+    <!--线条的颜色 -->
+    <color name="colorline">#666666</color>
+    <!--线性布局，条目鲜明情况下的背景色，淡灰色 -->
+    <color name="colordanbg">#EEEFF3</color>
+    <color name="colorhome">#22759f</color>
+    <color name="color_red">#d4020d</color>
+    <color name="colorhome_red">#d4020d</color>
+    <color name="colorxiantiao">#d8d8d8</color>
+    <color name="colorHei">#000</color>
+    <color name="colorlv">#20d402</color>
+    <color name="color_listviewitem">#333333</color>
+    <color name="color_code">#aaaaaa</color>
+    <color name="color_item">#f1f1f1</color>
+    <color name="color_bg_banhei">#262523</color>
+    <color name="color_bg_ban_touming">#e0000000</color>
+    <color name="color_bg_main">#f6f6f6</color>
+    <color name="color_bg_text">#999999</color>
+    <color name="color_jszc">#aaaaaa</color>
+    <color name="color_jianjie_text">#d3923c</color>
+    <color name="color_time_bg">#e5e0d7</color>
+    <color name="color_sjz">#ffb0b4</color>
+    <color name="color_lan">#00affe</color>
+    <color name="color_bus_line">#979fac</color>
+    <color name="color_bus_item_bg">#f6f6f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_yuandian">#8d8d8d</color>
+    <color name="color_car_text_lan">#3f85fe</color>
+    <color name="color_car_bg">#f5f5f5</color>
+    <color name="color_yello">#fbf800</color>
+
+    <color name="color_drive_detail_color_view">#e0e2e6</color>
+
+    <color name="color_water">#021019</color>
+    <color name="color_land">#08304B</color>
+    <color name="color_text_sheng">#847F7F</color>
+
+
+    <color name="timeline_light_grey">#e9e9e9</color>
+    <color name="timeline_lighter_grey">#cccccc</color>
+    <color name="timeline_almost_white">#c0c0c0</color>
+</resources>

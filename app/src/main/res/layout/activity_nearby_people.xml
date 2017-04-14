@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@color/colordanbg"
+    android:fitsSystemWindows="true"
+
+    tools:context="zph.zhjx.com.chat.ui.NearbyPeopleActivity">
+    <include
+        android:id="@+id/headview1"
+        layout="@layout/headview1"/>
+    <FrameLayout
+        android:id="@+id/globe"
+        android:layout_below="@+id/headview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView
+            android:id="@+id/nearby_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/fujin_map"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true">
+
+       </com.amap.api.maps2d.MapView>
+
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

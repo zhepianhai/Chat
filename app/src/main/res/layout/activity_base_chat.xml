@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@color/colordanbg"
+    android:fitsSystemWindows="true"
+    tools:context="zph.zhjx.com.chat.base.BaseChatActivity">
+    <include layout="@layout/headview1"
+        android:id="@+id/headview1">
+    </include>
+    <zph.zhjx.com.chat.widget.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/content_lv"
+        android:layout_below="@+id/headview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_container_ll"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_container_ll"
+        android:layout_width="match_parent"
+        android:background="@color/colorbasse"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mess_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/xmxq_tc_bj"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/message_send_btn"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="8dp"
+            android:text="发送"
+            android:textColor="@color/colorbasse"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_bg_select"
+            />
+    </LinearLayout>
+</RelativeLayout>

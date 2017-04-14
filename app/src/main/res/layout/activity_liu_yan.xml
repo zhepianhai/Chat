@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:background="@color/colordanbg"
+    android:fitsSystemWindows="true"
+    tools:context="zph.zhjx.com.chat.ui.LiuYanActivity">
+    <include
+        android:id="@+id/headview1"
+        layout="@layout/headview1"/>
+    <zph.zhjx.com.chat.view.TopIndicator
+        android:layout_width="match_parent"
+
+        android:id="@+id/topindicator_all"
+        android:layout_height="48dp">
+
+    </zph.zhjx.com.chat.view.TopIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_all"
+        />
+</LinearLayout>

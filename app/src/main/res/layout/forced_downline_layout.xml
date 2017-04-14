@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:background="@color/colorbasse"
+        android:orientation="vertical">
+        <TextView
+            android:background="@color/colorhome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="下线通知"
+            android:textColor="@color/colorbasse"
+            android:textSize="17sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorbasse"
+            android:layout_height="120dp">
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="50dp"
+                android:src="@mipmap/jinggao"
+                android:layout_height="80dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="你的账号在另一个地点登录，您被迫下线。\n如果不是你本人操作，那么你的密码很可能已经泄露。"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:gravity="center|left"
+                    android:textColor="#000"
+                    android:layout_height="80dp" />
+                <RelativeLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/force_login_btn"
+                        android:layout_toLeftOf="@+id/force_ok_btn"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:text="重新登录"
+                        android:background="@drawable/miaobian_lanse"
+                        android:textColor="@color/colorbasse"
+                        android:layout_height="25dp" />
+
+                    <Button
+                        android:id="@+id/force_ok_btn"
+                        android:layout_width="wrap_content"
+                        android:text="确定"
+                        android:textSize="14sp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/miaobian_lanse"
+                        android:textColor="@color/colorbasse"
+                        android:layout_height="25dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

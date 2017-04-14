@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colordanbg"
+    android:orientation="vertical"
+    tools:context="zph.zhjx.com.chat.fragment.GeoSotFragment">
+    <RelativeLayout
+        android:id="@+id/fujinderen_layout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/hongdian1"
+            android:layout_width="28dp"
+            android:background="@mipmap/fujinderen"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_height="28dp" />
+        <TextView
+            android:id="@+id/xuanzediqu1"
+            android:layout_width="80dp"
+            android:text="附近的人"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:layout_toRightOf="@+id/hongdian1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/zhuji"
+            android:visibility="invisible"
+            android:layout_width="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/zhuji"
+            android:layout_height="18dp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+
+
+    <RelativeLayout
+        android:id="@+id/liuyan_layout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/hongdian2"
+            android:layout_width="28dp"
+            android:background="@mipmap/liuyan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_height="28dp" />
+        <TextView
+            android:id="@+id/xuanzediqu2"
+            android:layout_width="80dp"
+            android:text="网格留言"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:layout_toRightOf="@+id/hongdian2"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/zhuji1"
+            android:visibility="invisible"
+            android:layout_width="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/zhuji"
+            android:layout_height="18dp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/guiji_layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/hongdian3"
+            android:layout_width="28dp"
+            android:background="@mipmap/icon_guiji"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_height="28dp" />
+        <TextView
+            android:id="@+id/xuanzediqu3"
+            android:layout_width="80dp"
+            android:text="行为轨迹"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:layout_toRightOf="@+id/hongdian3"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/zhuji2"
+            android:visibility="invisible"
+            android:layout_width="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/zhuji"
+            android:layout_height="18dp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:id="@+id/pop_layout"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/buttom_nearby_nv"
+        android:layout_width="match_parent"
+        android:text="只查看女生"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="45dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+
+
+    <Button
+        android:id="@+id/buttom_nearby_nan"
+        android:layout_width="match_parent"
+        android:text="只查看男生"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="45dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+
+    <Button
+        android:id="@+id/buttom_nearby_all"
+        android:layout_width="match_parent"
+        android:text="查看全部"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="45dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+    <Button
+        android:id="@+id/buttom_nearby_list"
+        android:layout_width="match_parent"
+        android:text="以列表形式查看"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="45dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+    <Button
+        android:id="@+id/buttom_nearby_gaode"
+        android:layout_width="match_parent"
+        android:text="以高德地图网格形式查看"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="45dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+    <Button
+        android:id="@+id/buttom_nearby_sot"
+        android:layout_width="match_parent"
+        android:text="以三维地图网格形式查看"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="45dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+
+    <Button
+        android:id="@+id/buttom_nearby_cls"
+        android:layout_width="match_parent"
+        android:text="清除地理信息位置"
+        android:background="@drawable/relalayout_select"
+        android:layout_height="45dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorxiantiao"/>
+    </LinearLayout>
+</RelativeLayout>

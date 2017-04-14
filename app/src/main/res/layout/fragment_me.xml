@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colordanbg"
+    tools:context="zph.zhjx.com.chat.fragment.MeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/headlayout1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorbasse"
+        android:layout_height="80dp">
+        <zph.zhjx.com.chat.view.CircleImageView
+            android:id="@+id/me_message_image"
+            android:layout_width="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/me_message_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:gravity="center|left"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_bg_banhei"
+                    android:id="@+id/me_message_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/me_message_sex"
+                    android:layout_width="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="18dp" />
+            </LinearLayout>
+            <TextView
+                android:textColor="@color/color_bus_line"
+                android:gravity="center|left"
+                android:layout_weight="2"
+                android:id="@+id/me_message_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/me_logout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/relalayout_select">
+
+        <ImageView
+            android:id="@+id/user5_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/setting_lan" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:id="@+id/jiantou6"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/yuan_hong" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/jiantou6"
+            android:layout_toRightOf="@+id/user5_image"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:text="系统设置"
+            android:textColor="@color/color_listviewitem"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
